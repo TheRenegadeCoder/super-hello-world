@@ -13,4 +13,5 @@ we write? That's the challenge set out to tackle in this repo.
 
 To keep things simple, I'm restricting the repo to one change per
 pull request. That way, we can go back and see this beast transform
-one pull request at a time. 
+one pull request at a time. In addition, I'm restricting the repo to
+Python 3.5 and above. 
