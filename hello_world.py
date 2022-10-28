@@ -1,6 +1,6 @@
 def hello_world():
-    error = format_error(get_error(hello_world.__name__))
     try:
+        error = format_error(get_error(hello_world.__name__))
         raise Exception(error)
     except Exception as e:
         for character in str(e):
