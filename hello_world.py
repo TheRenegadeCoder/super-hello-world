@@ -19,18 +19,18 @@ def get_error(message):
     return c
 
 
-def get_exception(message):
-    c = message[0]
-    if message[1:]:
-        c += get_issue(message[1:])
-    return c
+def get_exception(shout):
+    i = shout[0]
+    if shout[1:]:
+        i += get_issue(shout[1:])
+    return i
 
 
-def get_issue(message):
-    c = message[0]
-    if message[1:]:
-        c += get_error(message[1:])
-    return c
+def get_issue(whisper):
+    w = whisper[0]
+    if whisper[1:]:
+        w += get_error(whisper[1:])
+    return w
 
 
 hello_world()
