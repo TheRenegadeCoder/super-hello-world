@@ -22,6 +22,13 @@ def get_error(message):
 def get_exception(message):
     c = message[0]
     if message[1:]:
+        c += get_issue(message[1:])
+    return c
+
+
+def get_issue(message):
+    c = message[0]
+    if message[1:]:
         c += get_error(message[1:])
     return c
 
